@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <!-- a diretiva "v-once" seta o primeiro valor encontrado de uma determinada propriedade, se o valor da propriedade for alterado por alguma função ou método o vue.js não irá alterar o valor dos que estão com a diretiva "v-once". -->
+    <p v-once>{{ titulo }}</p>
+    <p>{{ saudacao() }}</p>
+    <a v-bind:href="link">Google</a>
+    <hr>
+    <p v-html="linkHtml"></p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Usando Vue.js!',
+            link: 'https://www.google.com.br',
+            linkHtml: '<a href="http://www.google.com.br">Google</a>'
+        },
+        methods: {
+            saudacao: function () {
+                this.titulo = 'Bom dia!';
+                return this.titulo;
+            }
+        }
+    })
+</script>

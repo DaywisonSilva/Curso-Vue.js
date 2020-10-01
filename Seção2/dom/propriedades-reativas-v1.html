@@ -1,0 +1,17 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ titulo }}</p>
+    <!-- <input type="text" v-bind:value="titulo" v-on:input="titulo = $event.target.value"> -->
+    <!-- O "v-model" altera os dados que estão na instância do vue quanto os dados do que são gerados no html -->
+    <input type="text" v-model="titulo">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: ''
+        }
+    })
+</script>
