@@ -4,17 +4,17 @@
     <img src="https://3lhowb48prep40031529g5yj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/logo-vuejs-min.png" alt="Logotipo Vue.js">
 </p>
 
-> A única maneira de fazer um bom trabalho é amando o que você faz. Se você ainda não encontrou, continue procurando. Não se desespere. Assim como no amor, você saberá quando tiver encontrado. - Steve Jobs
+> "A única maneira de fazer um bom trabalho é amando o que você faz. Se você ainda não encontrou, continue procurando. Não se desespere. Assim como no amor, você saberá quando tiver encontrado." - Steve Jobs
 
 #
 
-Este repositório tem por objetivo guardar códigos correspondentes as aulas de vue.js, ministradas no curso da Coder, através da plataforma de Udemy.
+Este repositório tem por objetivo guardar códigos correspondentes as aulas de vue.js, ministradas no curso da Coder, através da plataforma da Udemy.
 Fique à vontade para inspecionar o código e descobrir a base desse maravilhoso framework javascript. :heart_eyes:
 
 ## Prioridades nos Estudos
-1. Estudar
-2. Praticar
-3. Revisar
+1. Estudar :books:
+2. Praticar :computer:
+3. Revisar :open_book:
 
 ## Módulos do Curso
 
