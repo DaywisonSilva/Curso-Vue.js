@@ -1,8 +1,6 @@
 # Curso de Vue.js
 
-<p style="text-align: center;">
-    <img src="https://3lhowb48prep40031529g5yj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/logo-vuejs-min.png" alt="Logotipo Vue.js">
-</p>
+![Logotipo Vue.js ><](https://3lhowb48prep40031529g5yj-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/logo-vuejs-min.png)
 
 > A única maneira de fazer um bom trabalho é amando o que você faz. Se você ainda não encontrou, continue procurando. Não se desespere. Assim como no amor, você saberá quando tiver encontrado. - Steve Jobs
 
