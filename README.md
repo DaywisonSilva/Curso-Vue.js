@@ -19,12 +19,12 @@ Fique à vontade para inspecionar o código e descobrir a base desse maravilhoso
 ## Módulos do Curso
 
 <p>
-    :x: Não Concluído | :heavy_check_mark: Concluído
+    :x: Não Concluído | :heavy_check_mark: Concluído | :blue_book: Estudando
 </p>
 
 ### Seção 1: Introdução :heavy_check_mark:
 ### Seção 2: Usando Vue.js para interagir com a DOM :heavy_check_mark:
-### Seção 3: Usando Condicionais & renderização de Listas :x:
+### Seção 3: Usando Condicionais & renderização de Listas :blue_book:
 ### Seção 4: Projeto #01 - O Matador de Monstros :x:
 ### Seção 5: Entendendo a Instância Vue :x:
 ### Seção 6: Fluxo de Desenvolvimento "Real" usando Vue CLI :x:

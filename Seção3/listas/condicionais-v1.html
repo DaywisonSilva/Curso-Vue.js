@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Curso de Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <p v-if="logado">Usuário Logado: {{nome}}</p>
+        <!-- A diretiva "v-else" só irá funcionar somente se o elemento anterior do DOM estiver marcado com a diretiva v-if -->
+        <p v-else>Nenhum usuário logado</p>
+        <button @click="logado = !logado">{{logado ? 'Sair' : 'Entrar'}}</button>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                nome: "Maria",
+                logado: false,
+            },
+            methods: {
+
+            }
+        })
+    </script>
+</body>
+
+</html>
