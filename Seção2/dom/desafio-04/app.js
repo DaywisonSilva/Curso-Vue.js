@@ -1,39 +1,46 @@
 new Vue({
 	el: '#desafio',
 	data: {
-		aplicaDestaque: false,
-		infoClasse: '',
-		classeFour: '',
-		tf: '',
+		classe1: 'destaque',
+		tamanho: 'tamanho',
+		bgYellow: 'bgYellow',
+		classe3: '',
+		classe4: '',
+		bool: true,
+		estilo5: {
+			width: '100px',
+			height: '100px'
+		},
+		cor: 'blue',
+		barra: ''
 	},
 	computed: {
-		classes() {
+		bgColor() {
 			return {
-				destaque: !this.aplicaDestaque,
-				encolher: this.aplicaDestaque
+				backgroundColor: this.cor
 			}
 		},
-		sizeYellow() {
-			return {
-				size: true,
-				yellow: true
-			}
-
-		},
-		fourEstilos() {
-			if (this.tf == "true") {
-				return `${this.classeFour}`
-			}
-		}
 	},
 	methods: {
 		iniciarEfeito() {
 			setInterval(() => {
-				this.aplicaDestaque = !this.aplicaDestaque;
+				this.classe1 = this.classe1 == 'destaque' ? 'encolher' : 'destaque';
 			}, 100)
 		},
+		setBool(event) {
+			if (event.target.value == 'true') {
+				this.bool = true;
+			} else if (event.target.value == 'false') {
+				this.bool = false;
+			}
+		},
 		iniciarProgresso() {
-
+			let largura = 5;
+			let intervalo = setInterval(() => {
+				largura += 5;
+				this.barra = `width:${largura}%`
+				if (largura == 100) clearInterval(intervalo);
+			}, 100)
 		}
 	}
 })

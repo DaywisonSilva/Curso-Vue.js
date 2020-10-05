@@ -2,7 +2,7 @@ new Vue({
 	el: '#desafio',
 	data: {
 		classe1: 'destaque',
-		perigo: true,
+		perigo: '',
 		classe3: '',
 		classe4: '',
 		cor5: '',
