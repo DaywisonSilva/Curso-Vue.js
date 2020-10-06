@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Listas</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <ul>
+            <li v-for="(cor, indice) in cores">{{cor}} - {{indice}}</li>
+        </ul> -->
+
+        <!-- <template v-for="(cor, indice) in cores">
+            <h1>{{cor}}</h1>
+            <p>{{indice}}</p>
+        </template> -->
+        <ul>
+            <!-- pega o objeto que está dentro do array -->
+            <li v-for="pessoa in pessoas">
+                <!-- pega o valor de cada atributo dentro do objeto -->
+                <div v-for="(valor, chave, index) in pessoa">
+                    {{valor}} - {{chave}} - {{index}}
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <span v-for="n in 10">
+            {{n}}
+        </span>
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                cores: ['vermelho', 'verde', 'amarelo', 'azul'],
+                pessoas: [
+                    { nome: 'Ana', idade: 26, peso: 59 },
+                    { nome: 'Guilherme', idade: 22, peso: 89 },
+                ]
+            },
+            methods: {
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>
