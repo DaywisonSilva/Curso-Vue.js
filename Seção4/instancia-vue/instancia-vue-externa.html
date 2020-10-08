@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Instância Vue</title>
+</head>
+
+<body>
+
+    <div id="app1">
+        {{titulo1}} {{titulo2}}
+        <button @click="alterar">Alterar</button>
+    </div>
+
+    <div id="app2">
+        {{titulo1}} {{titulo2}}
+        <button @click="alterar">Alterar</button>
+
+    </div>
+
+    <script>
+        const vm1 = new Vue({
+            el: '#app1',
+            data: {
+                titulo1: 'Teste 1'
+            },
+            methods: {
+                alterar() {
+                    this.titulo1 += '!!!!'
+                }
+            }
+        })
+
+        const vm2 = new Vue({
+            el: '#app2',
+            data: {
+                titulo2: 'Teste 2'
+            },
+            methods: {
+                alterar() {
+                    this.titulo2 += '!!!!'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
