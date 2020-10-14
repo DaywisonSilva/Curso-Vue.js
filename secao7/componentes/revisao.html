@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue"></script>
+    <title>Componentes</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <contador></contador>
+        <contador></contador>
+        <contador></contador>
+
+    </div>
+
+    <script>
+
+        // Registro Global
+        Vue.component('contador', {
+            /* O componente precisa retornar apenas um elemento raiz, ou seja, precisa ter um elemento container que englobe todos os outros elementos */
+            template: `
+                <div>
+                    <span>{{contador}}</span>
+                    <button @click="contador++">+</button>
+                    <button @click="contador--">-</button>
+                </div>
+            `,
+            // é necessario returnar um objeto, para que cada componente tenha a sua vida, um estado próprio
+            data: function () {
+                return {
+                    contador: 0,
+                }
+            }
+        })
+
+        new Vue({
+            el: '#app',
+        })
+    </script>
+</body>
+
+</html>
