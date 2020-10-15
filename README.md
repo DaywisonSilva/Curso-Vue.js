@@ -24,11 +24,11 @@ Fique à vontade para inspecionar o código e descobrir a base desse maravilhoso
 
 ### Seção 1: Introdução :heavy_check_mark:
 ### Seção 2: Usando Vue.js para interagir com a DOM :heavy_check_mark:
-### Seção 3: Usando Condicionais & renderização de Listas :blue_book:
-### Seção 4: Projeto #01 - O Matador de Monstros :x:
-### Seção 5: Entendendo a Instância Vue :x:
-### Seção 6: Fluxo de Desenvolvimento "Real" usando Vue CLI :x:
-### Seção 7: Introdução aos Componentes :x:
+### Seção 3: Usando Condicionais & renderização de Listas :heavy_check_mark:
+### Seção 4: Projeto #01 - O Matador de Monstros :heavy_check_mark:
+### Seção 5: Entendendo a Instância Vue :heavy_check_mark:
+### Seção 6: Fluxo de Desenvolvimento "Real" usando Vue CLI :heavy_check_mark:
+### Seção 7: Introdução aos Componentes :book:
 ### Seção 8: Comunicação Entre Componentes :x:
 ### Seção 9: Uso Avançado de Componentes :x:
 ### Seção 10: Projeto #02 - Tarefas (TODO) :x:
