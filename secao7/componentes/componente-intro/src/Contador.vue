@@ -1,8 +1,9 @@
 <template>
   <div class="contador">
-    <span>{{ contador }}</span>
+    <span>{{contador}}</span>
     <button @click="adicionar">+</button>
     <button @click="subtrair">-</button>
+
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
 </script>
 
 <style>
+
 .contador span {
   border-bottom: 1px solid #ccc;
   height: 30px;
@@ -40,4 +42,5 @@ export default {
   margin-left: 10px;
   outline: none;
 }
+
 </style>
