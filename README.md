@@ -28,7 +28,7 @@ Fique à vontade para inspecionar o código e descobrir a base desse maravilhoso
 ### Seção 4: Projeto #01 - O Matador de Monstros :heavy_check_mark:
 ### Seção 5: Entendendo a Instância Vue :heavy_check_mark:
 ### Seção 6: Fluxo de Desenvolvimento "Real" usando Vue CLI :heavy_check_mark:
-### Seção 7: Introdução aos Componentes :book:
+### Seção 7: Introdução aos Componentes :blue_book:
 ### Seção 8: Comunicação Entre Componentes :x:
 ### Seção 9: Uso Avançado de Componentes :x:
 ### Seção 10: Projeto #02 - Tarefas (TODO) :x:

@@ -18,7 +18,6 @@
     </div>
 
     <script>
-
         // Registro Global
         Vue.component('contador', {
             /* O componente precisa retornar apenas um elemento raiz, ou seja, precisa ter um elemento container que englobe todos os outros elementos */
@@ -30,7 +29,7 @@
                 </div>
             `,
             // é necessario retornar um objeto, para que cada componente tenha a sua vida, um estado próprio
-            data: function () {
+            data: function() {
                 return {
                     contador: 0,
                 }
