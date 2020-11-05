@@ -1,4 +1,5 @@
 <template>
+	<!-- utilizar o bind -->
 	<div id="app">
 		<usuario-lista :usuarios="usuarios" />
 		<usuario-detalhe />
