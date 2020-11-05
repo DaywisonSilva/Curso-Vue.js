@@ -34,5 +34,9 @@ button {
 	padding: 5px 15px;
 	border-radius: 4px;
 	margin: 10px;
+	cursor: pointer;
+}
+button:hover{
+	background-color: rgb(216, 216, 216);
 }
 </style>
