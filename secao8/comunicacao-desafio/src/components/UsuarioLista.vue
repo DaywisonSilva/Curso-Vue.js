@@ -8,7 +8,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="usuario in usuarios" :key="usuario.id">
+                <tr v-for="usuario in usuarios" 
+                :key="usuario.id"
+                @click="mostrarUsuario(usuario.id, usuario.nome, usuario.idade)" >
                     <td>{{ usuario.id }}</td>
                     <td>{{ usuario.nome }}</td>
                 </tr>
@@ -19,7 +21,12 @@
 
 <script>
 export default {
-    props: { usuarios: Array }
+    props: { usuarios: Array },
+    methods: {
+        mostrarUsuario(id, nome, idade) {
+            this.$emit('mostrarInfo', {id, nome, idade})
+        }
+    }
 }
 </script>
 

@@ -11,9 +11,9 @@
 
 <script>
 export default {
+    props: {usuario: Object},
     data() {
         return {
-            usuario: null
         }
     }
 }
