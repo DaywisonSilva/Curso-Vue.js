@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+html,
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.menu {
+  width: 80px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.397);
+  z-index: 2;
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.expanded-menu {
+  width: 350px;
+  height: 100vh;
+  transition: all 0.2s linear;
+}
+
+.hamburger-menu {
+  width: 50px;
+  height: 8px;
+  border-radius: 50px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: teal;
+  cursor: pointer;
+}
+
+.hamburger-menu::after {
+  content: '';
+  width: 35px;
+  height: 8px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+  background-color: teal;
+}
+
+.expanded-menu .hamburger-menu::after {
+  left: 15px;
+  background-color: teal;
+}
+
+.container-layout {
+  width: calc(100vw - 80px);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+
+.w-auto-layout {
+  width: calc(100vw - 350px);
+}
+
+.container-card {
+  width: 95%;
+  max-width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.397);
+  margin: calc(50vh - 250px) auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-options {
+  width: 35%;
+  height: 100%;
+  background-color: rgb(3, 149, 137);
+  border-radius: 10px;
+  color: rgb(3, 149, 137);
+}
+
+.card-options ul {
+  list-style: none;
+  font-size: 1.8em;
+  font-family: 'Andika New Basic', sans-serif;
+}
+
+.card-options ul li:nth-child(1) {
+  background-color: white;
+  border-bottom: 1px solid rgb(3, 149, 137);
+  border-radius: 10px 10px 0px 0;
+}
+
+.card-options ul li {
+  background-color: white;
+  border-bottom: 1px solid rgb(3, 149, 137);
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.card-text {
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  animation: showText 1s linear 1 forwards;
+  overflow: auto;
+}
+
+@keyframes showText {
+  from {
+    transform: translateY(100%);
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .menu,
+  .container-card {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .w-auto-layout {
+    width: calc(100vw - 80px);
+  }
+  .card-options ul {
+    font-size: 1em;
+  }
+}
