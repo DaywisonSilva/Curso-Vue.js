@@ -1,31 +1,39 @@
 <template>
   <div id="app">
     <h1>Tarefas</h1>
+    <tasks-progress :progress="progress"/>
     <new-task @taskAdded="addTask" />
-    <task-grid :tasks="tasks" @taskDeleted="deleteTask"></task-grid>
+    <task-grid :tasks="tasks" @taskDeleted="deleteTask" @taskStateChanged="toggleTaskState"></task-grid>
   </div>
 </template>
 
 <script>
 import TaskGrid from "@/components/TaskGrid";
 import NewTask from "@/components/NewTask";
+import TasksProgress from "@/components/TasksProgress";
 
 export default {
   components: {
     TaskGrid,
     NewTask,
+    TasksProgress
+  },
+  watch: {
+    tasks() {
+      localStorage.setItem('tasks', JSON.stringify(this.tasks))
+    }
+  },
+  computed: {
+    progress() {
+      const total = this.tasks.length;
+      const done = this.tasks.filter(t => !t.pending).length
+
+      return Math.round(done / total * 100) || 0;
+    }
   },
   data() {
     return {
       tasks: [
-        {
-          name: "Lavar Louça",
-          pending: false,
-        },
-        {
-          name: "Comprar blusa",
-          pending: true,
-        },
       ],
     };
   },
@@ -41,8 +49,15 @@ export default {
     },
     deleteTask(i) {
       this.tasks.splice(i, 1)
+    },
+    toggleTaskState(i) {
+      this.tasks[i].pending = !this.tasks[i].pending
     }
   },
+  created() {
+    const json = localStorage.getItem('tasks');
+    this.tasks = JSON.parse(json) || []
+  }
 };
 </script>
 
