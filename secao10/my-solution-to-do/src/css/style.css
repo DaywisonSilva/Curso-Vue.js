@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, #3fb27f, #32475b);
+}
