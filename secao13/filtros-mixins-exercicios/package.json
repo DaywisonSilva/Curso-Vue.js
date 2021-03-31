@@ -1,5 +1,5 @@
 {
-  "name": "formulario-exercicios",
+  "name": "filtros-mixins-exercicios",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,9 +28,7 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {
-      "no-console": false
-    },
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
